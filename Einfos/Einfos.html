@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Einfos.css">
+    <title>Jogo da Memoria</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="modal">
+        <div class="content">
+          <div>
+            <h1>Edite seus dados</h1>
+            <p>Confirme e altere os seus dados:</p>
+          </div><br>
+          <div>
+            <form action="get" class="formulario">
+              <label for="Nome">Nome Completo</label>
+              <input type="text" name="Nome" id="Nome" placeholder="Nome Completo"><br>
+
+              <label for="dtnascimento">Data de nascimento</label>
+              <input type="date" name="dtnascimento" id="dtnascimento" placeholder="Data de nascimento" disabled><br>
+
+              <label for="cpf">CPF</label>
+              <input type="text" name="cpf" id="cpf" placeholder="CPF" value="000.000.000-00" disabled><br>
+
+              <label for="tel">Telefone</label>
+              <input type="tel" name="tel" id="tel" placeholder="Telefone"><br>
+              
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" placeholder="E-mail"><br>
+
+              <label for="login">Usuário</label>
+              <input type="text" name="usuario" id="usuario" placeholder="Usuário" value="User" disabled><br>
+
+              <label for="senha">Senha</label>
+              <input type="password" name="senha" id="senha" placeholder="Senha"><br>
+
+              <label for="csenha">Confirmar Senha</label>
+              <input type="password" name="csenha" id="csenha" placeholder="Confirmar Senha"><br>
+
+              <input type="submit" name="submit" id="submit" value="Atualizar"><br>
+              <input type="reset" name="reset" id="reset" value="Cancelar">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+
+</html>
