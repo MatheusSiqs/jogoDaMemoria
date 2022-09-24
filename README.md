@@ -5,10 +5,13 @@ Total de Telas: 8;
 
 Login; x
 Cadastro de usuário; x
-Editar infos; x
+Menu; x
 Escolha de jogo; x
+Historico; x
+
+Editar infos; x
+
 
 Jogo; x
 Rankings; x
-Historico; x
-Menu; x
+

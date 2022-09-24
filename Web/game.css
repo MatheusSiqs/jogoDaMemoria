@@ -10,8 +10,8 @@ body{
 	background-color:var(--qui);
 }
 .carta{
-	width:500px;
-	height:500px;
+	width:100px;
+	height:100px;
 	background-color: transparent;
 	perspective:1000px;
 	transition: transform 1.5s;
@@ -46,8 +46,8 @@ body{
 }
 
 img{
-	width:500px;
-	height:500px;
+	width:100px;
+	height:100px;
 }
 /*
 .carta {
