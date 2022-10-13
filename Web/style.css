@@ -21,6 +21,10 @@
 	position:relative;
 }
 
+#escolha{
+  display: flex;
+}
+
 body{
 	background-color:#D4A373;
 	display:flex;
