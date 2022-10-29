@@ -1,5 +1,6 @@
 var temp = null;
 var ctempo = null;
+var cTimeout = null
 var tamanho = null;
 var trapaca = 0;
 var jaEscolheu = 0;
@@ -116,7 +117,6 @@ function verificaParidade(event){
 		flipCarta(event.target.id)
 		if(temp == null){
 			temp = [carta.name,carta.id]
-      console.log(temp)
 		}else{
 			if(temp[0] == carta.name){
 				temp = null;
@@ -157,22 +157,22 @@ function criaTimer(){
   switch(tamanho){
     case '2':
       ctempo = setInterval(reduzTimer,1000);
-      setTimeout(finalizaJogo,20*1000);
+      cTimeout = setTimeout(finalizaJogo,20*1000);
       break;
 
     case '4':
       ctempo = setInterval(reduzTimer,1000);
-      setTimeout(finalizaJogo,60*1000);
+      cTimeout = setTimeout(finalizaJogo,60*1000);
       break;
 
     case '6':
       ctempo = setInterval(reduzTimer,1000);
-      setTimeout(finalizaJogo,90*1000);
+      cTimeout = setTimeout(finalizaJogo,90*1000);
       break;
 
     case '8':
       ctempo = setInterval(reduzTimer,1000);
-      setTimeout(finalizaJogo,120*1000);
+      cTimeout = setTimeout(finalizaJogo,120*1000);
      
       break;
   }
@@ -200,8 +200,6 @@ function desistir(){
 }
 
 function ativaTrapaca(){
-  console.log(childs)
-
   if(!trapaca){
     trapaca = 1;
 
@@ -249,6 +247,8 @@ function inicializaTimer(){
 function verificaVitoria(){
   acertos++;
   if(acertos==childs){
+    clearInterval(ctempo);
+    clearTimeout(cTimeout);
     if(confirm("Você Venceu ^-^,\n Deseja jogar novamente?")){
       document.location.reload();
     }else{
